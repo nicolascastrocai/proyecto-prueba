@@ -11,7 +11,7 @@ this.informacion=informacion
 this.img=img
 
 var cards ='hola' 
-var i=0
+
 
 this.mostrarCards=function(){
     cards=document.createElement('div')
@@ -32,11 +32,12 @@ this.mostrarCards=function(){
    
     var caja=document.getElementById('caja')
     caja.appendChild(cards)
+    btnSacar.disabled= false
 }
 
-this.sacarCarps=function(){
-    caja.innerHTML=''
-    
+this.sacarCarps=function(){  
+caja.innerHTML=''
+btnSacar.disabled= true
 }
 
 }
@@ -53,6 +54,8 @@ console.log(card3)
 
 var btn=document.getElementById('btn')
 var btnSacar=document.getElementById('btn-sacar')
+btnSacar.disabled = true
+
 
 btn.addEventListener('click',function(){
 card1.mostrarCards()
@@ -67,5 +70,3 @@ btnSacar.addEventListener('click',function(){
    
 })
 
-var hola='hola' 
-var chau='chau'
