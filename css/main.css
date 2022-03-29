@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+}
+.navbar .conteiner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.navbar .conteiner .item {
+  color: white;
+  padding: 20px;
+  margin: 5px 20px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+.navbar .conteiner .item:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-display {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .card {
+  width: 250px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+main .card:hover {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%);
+}
+main .card img {
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  background-position: center;
+}
+main .card .titulo {
+  margin: 5px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+main .card .informacion {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding: 10px;
+}
+main .card button {
+  margin-top: 10px;
+  padding: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 5px;
+  transition: all 400ms ease;
+  margin-left: 80px;
+}
+main .card button:hover {
+  background-color: #2fb4cc;
+  color: white;
+}
+
+@media all and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .conteiner {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+  .navbar .conteiner .item {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+  .navbar .off {
+    display: block;
+  }
+}
+#btn {
+  margin-top: 10px;
+  padding: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 5px;
+  transition: all 400ms ease;
+  margin-left: 100px;
+}
+#btn:hover {
+  background-color: #2fb4cc;
+  color: white;
+}
+
+#btn-sacar {
+  margin-top: 10px;
+  padding: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 5px;
+  transition: all 400ms ease;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+#btn-sacar:hover {
+  background-color: #2fb4cc;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
