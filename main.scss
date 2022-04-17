@@ -13,13 +13,16 @@ body{
     background-color: black;
     width: 100%;
 
+    
+
     .conteiner{
         display: flex;
         width: 100%;
         justify-content: center;
+        
 
-
-
+        
+       
         .item{
             color: white;
             padding: 20px;
@@ -27,16 +30,25 @@ body{
             width: 100px;
             text-align: center;
             border-radius: 10px;
+            
 
             &:hover{
                 background-color: white;
                 color: black;
             }
+            
         }
+        .active{
+            background-color: white;
+            color: black;
+        }
+        
+        
+
 
         
     }
-
+    
 
 }
 .btn-display{
@@ -114,6 +126,7 @@ main{
     }
 
 }
+
 
 @media all and (max-width: 700px){
     .navbar {

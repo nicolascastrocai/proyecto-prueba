@@ -29,6 +29,10 @@ body {
   background-color: white;
   color: black;
 }
+.navbar .conteiner .active {
+  background-color: white;
+  color: black;
+}
 
 .btn-display {
   margin-top: 10px;

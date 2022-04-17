@@ -1,0 +1,19 @@
+{{#if productos.length}}
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+
+    {{#each productos}}
+    <tr>
+        <td>{{nombre}}</td>
+        <td>{{apellido}}</td>
+        <td>{{edad}}</td>
+    </tr>
+    {{/each}}
+
+</table>
+
+{{/if}}
